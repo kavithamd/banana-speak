@@ -5,7 +5,7 @@ var outputDiv = document.querySelector(".output");
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 function getTranslationURL(input) {
-  return (serverURL = "?" + "text" + input);
+  return serverURL + "?input=" + input;
 }
 
 function errorHandler(error) {

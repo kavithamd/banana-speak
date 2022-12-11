@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
-    --primary-color: #efcb3c;
+    --primary-color: #f7e496;
     --secondary-color: #fad852;
 }
 body {
@@ -16,7 +16,6 @@ h1,h2,p {
     margin: 0;
 }
 
-/* Heading */
 .heading {
     display: flex;
     justify-content: center;
@@ -26,12 +25,7 @@ h1,h2,p {
     text-align: center;
     line-height: 3rem;
 }
-.heading-image {
-    width: 3.5rem;
-    padding: 0 0.5rem;
-}
 
-/* Divider */
 .divider {
     background-color: black;
     height: 2px;
@@ -39,7 +33,6 @@ h1,h2,p {
     margin: 0.5rem 0;
 }
 
-/* Main */
 main {
     display: flex;
     flex-direction: column;
@@ -47,7 +40,6 @@ main {
     align-items: center;
 }
 
-/* Input and Output Box */
 .txt-input, .output {
     width: 60%;
     height: 22vh;
@@ -61,7 +53,6 @@ main {
     color: black;
 }
 
-/* Translate btn */
 #btn-translate {
     font-size: 1.5rem;
     font-weight: bold;
@@ -70,14 +61,13 @@ main {
     margin-bottom: 1rem;
     background-color: black;
     color: white;
-    box-shadow: 0 4px green;
+    box-shadow: 0 4px black;
 }
 #btn-translate:active {
     box-shadow: none;
     transform: translateY(3px);
 }
 
-/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -93,7 +83,6 @@ footer {
     width: 90%;
 }
 
-/* Media Queries */
 @media (max-width:900px) {
     .txt-input, .output {
         width: 80%;
@@ -111,9 +100,6 @@ footer {
     .heading {
         font-size: 1rem;
     }
-    .heading-image {
-        width: 3rem;
-    }
     #btn-translate {
         font-size: 1.3rem;
     }
@@ -127,11 +113,5 @@ footer {
     .heading {
         line-height: 2.5rem;
         padding: 0.8rem 0;
-    }
-    .image-1 {
-        margin-left: 2.5rem;
-    }
-    .image-2 {
-        margin-right: 2.5rem;
     }
 }
